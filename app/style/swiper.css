@@ -1,0 +1,15 @@
+.swiper_nav_left {
+  font-size: 30px;
+  opacity: 0.6;
+  position: absolute;
+  top: 20.5%;
+  left: 34%;
+}
+
+.swiper_nav_right {
+  font-size: 30px;
+  opacity: 0.6;
+  position: absolute;
+  top: 20.5%;
+  right: 34%;
+}

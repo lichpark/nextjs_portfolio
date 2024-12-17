@@ -1,0 +1,67 @@
+/* main slide */
+@import "mainSlide.css";
+/* 2nd section */
+@import "warhammerSection.css";
+/* best item  */
+@import "bestitem.css";
+/* preorder_section  */
+@import "preorder.css";
+/* meida_section  */
+@import "media.css";
+/* swiper custom */
+@import "swiper.css";
+
+/* item section common */
+.item_section {
+  width: 100%;
+  height: 100vh;
+  padding: 10%;
+}
+.itemtitle {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.item_border__div {
+  width: 40px;
+  height: 4px;
+  margin: 2% auto;
+  border-bottom: 4px solid gray;
+}
+.itemdesc {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #8f8d8d;
+  white-space: pre-line;
+}
+
+.card {
+  width: 250px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card_img_article {
+  width: 95%;
+  height: 70%;
+}
+.card_img {
+  width: 100%;
+  height: 100%;
+}
+.card_product {
+  font-size: 1.2rem;
+  text-align: center;
+  padding-bottom: 5%;
+  border-bottom: 1px solid gray;
+  height: 20%;
+}
+.card_price {
+  padding-top: 5%;
+  font-size: 1.1rem;
+  text-align: center;
+}

@@ -1,0 +1,88 @@
+/* leftmenu start */
+
+#left {
+  position: fixed;
+  left: 2.2%;
+  margin-top: 2.2%;
+  z-index: 999;
+  width: 15%;
+  background: #ffffff00;
+  padding: 1%;
+  min-width: 130px;
+  -webkit-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+#left:hover {
+  background-color: white;
+}
+#left_menu {
+  margin: 0 auto;
+}
+
+#left_menu ul {
+  font-size: 0;
+  line-height: 0;
+}
+
+#left_menu li {
+  position: relative;
+  z-index: 10;
+}
+
+#left_menu > li {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  line-height: 1.4em;
+  white-space: nowrap;
+}
+
+#left_menu li a {
+  display: block;
+  color: #000;
+}
+
+/* left logo */
+
+#left_menu .logo {
+  margin: 0px auto 30px;
+}
+
+#left_menu .logo img {
+  width: 100%;
+  position: relative;
+}
+
+/* login menu */
+
+#left_menu .login_menu {
+  line-height: 1.6em;
+  font-size: 0.7rem;
+  color: #000;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+#left_menu .login_menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+#left_menu .small_menu {
+  font-size: 0.6rem;
+  line-height: 1.6em;
+  color: #111;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
