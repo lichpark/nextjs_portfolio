@@ -44,6 +44,9 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 11;
   }
+  .swiper {
+    margin-top: 10%;
+  }
 
   .swiper_container {
     margin: auto;
