@@ -31,15 +31,16 @@ const ProductBuy = (props) => {
           document.body.scrollHeight,
           document.documentElement.scrollHeight
         );
-
+        console.log(scrollHeight);
+        const scrolldown = () => {
+          window.scrollTo({
+            top: scrollHeight,
+            behavior: "smooth",
+          });
+        };
         setTimeout(() => {
-          requestAnimationFrame(
-            window.scrollTo({
-              top: scrollHeight,
-              behavior: "smooth",
-            })
-          );
-        }, 200);
+          requestAnimationFrame(scrolldown);
+        }, 300);
       } else {
         modalRoot.style.width = "0";
         modalRoot.style.height = "0";
@@ -50,7 +51,7 @@ const ProductBuy = (props) => {
             top: 0,
             behavior: "smooth",
           });
-        }, 200);
+        }, 300);
       }
     }
   }, [showModal, modalRoot]);
