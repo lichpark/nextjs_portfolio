@@ -4,6 +4,7 @@ import gsap from "gsap";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Pagination from "./pagination";
+import Image from "next/image";
 
 const ListMain = (props) => {
   useEffect(() => {
@@ -38,7 +39,7 @@ const ListMain = (props) => {
               props.type == "list" ? "typeButton list_active" : "typeButton"
             }
           >
-            <img src="/imgs/ico_thumb.png" />
+            <Image width={200} height={200} src="/imgs/ico_thumb.png" alt="" />
           </Link>
           <Link
             href={`/portfolio/list/${props.id}/gallery`}
@@ -46,7 +47,12 @@ const ListMain = (props) => {
               props.type == "gallery" ? "typeButton list_active" : "typeButton"
             }
           >
-            <img src="/imgs/ico_gallery.png" />
+            <Image
+              width={200}
+              height={200}
+              src="/imgs/ico_gallery.png"
+              alt=""
+            />
           </Link>
         </div>
       </div>
@@ -64,8 +70,10 @@ const ListMain = (props) => {
                     : "list_main_list__figure"
                 }
               >
-                <img
-                  src={v.imgurl}
+                <Image
+                  width={200}
+                  height={200}
+                  src={`${v.imgurl}`}
                   alt=""
                   className="list_main_list__figure__img"
                 />

@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import Image from "next/image";
 
 const ProductSwiper = (props) => {
   if (props.imgs.length == 1) {
@@ -27,7 +28,14 @@ const ProductSwiper = (props) => {
       >
         {props.imgs.map((v, idx) => (
           <SwiperSlide key={idx}>
-            <img className="product_img" src={v} alt="" title="" />
+            <Image
+              width={200}
+              height={200}
+              className="product_img"
+              src={`${v}`}
+              alt=""
+              title=""
+            />
           </SwiperSlide>
         ))}
       </Swiper>

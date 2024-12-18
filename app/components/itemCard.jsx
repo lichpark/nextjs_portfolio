@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { numbertocomma } from "@/app/function/function";
+import Image from "next/image";
 
 const ItemCard = (props) => {
   const price = numbertocomma(props.price);
@@ -8,7 +9,9 @@ const ItemCard = (props) => {
     <div className="card">
       <Link href={`./portfolio/product/${props.linkid}`} className="card__a">
         <article className="card_img_article">
-          <img
+          <Image
+            width={200}
+            height={200}
             className="card_img"
             src={props.imgurl}
             alt={props.product_name}
