@@ -31,7 +31,7 @@ const ProductBuy = (props) => {
           document.body.scrollHeight,
           document.documentElement.scrollHeight
         );
-        console.log(scrollHeight);
+        //console.log(scrollHeight);
         const scrolldown = () => {
           window.scrollTo({
             top: scrollHeight,
