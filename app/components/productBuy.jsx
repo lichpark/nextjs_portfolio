@@ -27,11 +27,18 @@ const ProductBuy = (props) => {
         modalRoot.style.position = "absolute";
         modalRoot.style.top = "0";
 
+        const scrollHeight = Math.max(
+          document.body.scrollHeight,
+          document.documentElement.scrollHeight
+        );
+
         setTimeout(() => {
-          window.scrollTo({
-            top: Number(document.body.scrollHeight) + 330,
-            behavior: "smooth",
-          });
+          requestAnimationFrame(
+            window.scrollTo({
+              top: scrollHeight,
+              behavior: "smooth",
+            })
+          );
         }, 200);
       } else {
         modalRoot.style.width = "0";
