@@ -29,7 +29,7 @@ const ProductBuy = (props) => {
 
         setTimeout(() => {
           window.scrollTo({
-            top: pageHeight,
+            top: document.body.scrollHeight,
             behavior: "smooth",
           });
         }, 50);
