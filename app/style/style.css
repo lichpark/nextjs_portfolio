@@ -13,6 +13,9 @@
 /* list page */
 @import "list.css";
 
+/* list page */
+@import "mobile.css";
+
 .bold {
   font-weight: bold;
 }

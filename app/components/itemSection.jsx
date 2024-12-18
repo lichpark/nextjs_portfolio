@@ -139,6 +139,20 @@ const ItemSection = (props) => {
           onSwiper={(e) => {
             setSwiper(e);
           }}
+          breakpoints={{
+            319: {
+              slidesPerView: 1, //브라우저가 319보다 클 때
+              spaceBetween: 5,
+            },
+            767: {
+              slidesPerView: 2, //브라우저가 768보다 클 때
+              spaceBetween: 10,
+            },
+            1023: {
+              slidesPerView: 4, //브라우저가 1024보다 클 때
+              spaceBetween: 50,
+            },
+          }}
         >
           {props.swipearr.map((v, idx) => (
             <SwiperSlide key={idx}>

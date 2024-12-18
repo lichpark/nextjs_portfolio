@@ -6,10 +6,7 @@ const ItemCard = (props) => {
 
   return (
     <div className="card">
-      <Link
-        href={`./portfolio/product/${props.linkid}`}
-        style={{ width: "100%", height: "100%" }}
-      >
+      <Link href={`./portfolio/product/${props.linkid}`} className="card__a">
         <article className="card_img_article">
           <img
             className="card_img"

@@ -86,3 +86,8 @@
   font-weight: 400;
   letter-spacing: 1px;
 }
+
+/* mobile menu */
+#mobile_button {
+  display: none;
+}
