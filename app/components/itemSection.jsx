@@ -7,7 +7,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import { BiCaretLeftCircle, BiCaretRightCircle } from "react-icons/bi";
 import "swiper/css";
 import "swiper/css/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
 const ItemSection = (props) => {
@@ -67,7 +67,7 @@ const ItemSection = (props) => {
     );
   };
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     if (textRef.current) {
       // const rect = textRef.current.getBoundingClientRect();
       // const isVisible = rect.top && rect.bottom <= window.innerHeight;
@@ -106,7 +106,7 @@ const ItemSection = (props) => {
         }
       }
     }
-  };
+  }, [textRef, tl]);
 
   useEffect(() => {
     handleScroll();
@@ -114,7 +114,7 @@ const ItemSection = (props) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
 
   if (props.swipearr.length > 0) {
     //navigation custom

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import Texts from "./texts";
 import gsap from "gsap";
 import MainButton from "./mainButton";
@@ -43,7 +43,7 @@ const SlideSub = (props) => {
     );
   };
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     if (textRef.current) {
       const rect = textRef.current.getBoundingClientRect();
       const elementHeight = rect.bottom - rect.top;
@@ -65,7 +65,7 @@ const SlideSub = (props) => {
         }
       }
     }
-  };
+  }, [textRef, tl]);
 
   useEffect(() => {
     handleScroll();
@@ -73,7 +73,7 @@ const SlideSub = (props) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
 
   return (
     <section

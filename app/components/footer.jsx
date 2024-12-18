@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useLayoutEffect, useRef } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef } from "react";
 import FooterButton from "./footerButton";
 import FooterInfo from "./footerInfo";
 import gsap from "gsap";
@@ -113,7 +113,7 @@ const Footer = () => {
     );
   };
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     if (textRef.current) {
       const rect = textRef.current.getBoundingClientRect();
       const elementHeight = rect.bottom - rect.top;
@@ -142,7 +142,7 @@ const Footer = () => {
         }
       }
     }
-  };
+  }, [textRef, tl]);
 
   useEffect(() => {
     handleScroll();
@@ -150,7 +150,7 @@ const Footer = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
 
   useLayoutEffect(() => {
     handleScroll(); // DOM 초기 상태 확인
@@ -159,7 +159,7 @@ const Footer = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
 
   return (
     <section className="footer">

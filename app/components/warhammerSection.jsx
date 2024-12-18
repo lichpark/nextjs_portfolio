@@ -1,6 +1,6 @@
 "use client";
 import WarhammerSecDiv from "./warhammerSecDiv";
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 // gsap
 import gsap from "gsap";
 
@@ -41,8 +41,7 @@ const WarhammerSection = () => {
       }
     );
   };
-
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     if (textRef.current) {
       const rect = textRef.current.getBoundingClientRect();
       const elementHeight = rect.bottom - rect.top;
@@ -68,7 +67,7 @@ const WarhammerSection = () => {
         }
       }
     }
-  };
+  }, [textRef, tl]);
 
   useEffect(() => {
     handleScroll();
@@ -76,7 +75,7 @@ const WarhammerSection = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
 
   const secArr = [
     {
