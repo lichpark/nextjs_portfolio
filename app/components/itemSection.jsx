@@ -153,6 +153,7 @@ const ItemSection = (props) => {
               spaceBetween: 50,
             },
           }}
+          id="main_item_slide"
         >
           {props.swipearr.map((v, idx) => (
             <SwiperSlide key={idx}>

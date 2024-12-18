@@ -44,7 +44,7 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 11;
   }
-  .swiper {
+  #main_item_slide {
     margin-top: 10%;
   }
 
