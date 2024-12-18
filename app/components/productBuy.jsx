@@ -24,6 +24,7 @@ const ProductBuy = (props) => {
         modalRoot.style.width = `${pageWidth}px`;
         modalRoot.style.height = `${pageHeight}px`;
         modalRoot.style.position = "absolute";
+        modalRoot.style.top = "0";
 
         setTimeout(() => {
           window.scrollTo({
@@ -35,6 +36,7 @@ const ProductBuy = (props) => {
         modalRoot.style.width = "0";
         modalRoot.style.height = "0";
         modalRoot.style.position = "inherit";
+        modalRoot.style.top = "";
         setTimeout(() => {
           window.scrollTo({
             top: 0,
