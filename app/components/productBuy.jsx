@@ -32,7 +32,7 @@ const ProductBuy = (props) => {
             top: Number(document.body.scrollHeight) + 330,
             behavior: "smooth",
           });
-        }, 50);
+        }, 200);
       } else {
         modalRoot.style.width = "0";
         modalRoot.style.height = "0";
@@ -43,7 +43,7 @@ const ProductBuy = (props) => {
             top: 0,
             behavior: "smooth",
           });
-        }, 50);
+        }, 200);
       }
     }
   }, [showModal, modalRoot]);
