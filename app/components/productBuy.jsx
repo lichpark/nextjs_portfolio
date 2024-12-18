@@ -19,16 +19,17 @@ const ProductBuy = (props) => {
     if (modalRoot) {
       if (showModal) {
         const pageWidth = document.documentElement.scrollWidth;
-        const pageHeight = document.documentElement.scrollHeight;
+        //const pageHeight = document.documentElement.scrollHeight;
+        const pageHeight = document.documentElement.offsetHeight;
 
         modalRoot.style.width = `${pageWidth}px`;
         modalRoot.style.height = `${pageHeight}px`;
         modalRoot.style.position = "absolute";
-        modalRoot.style.top = "0";
+        modalRoot.style.bottom = "0";
 
         setTimeout(() => {
           window.scrollTo({
-            top: document.documentElement.scrollHeight,
+            top: pageHeight,
             behavior: "smooth",
           });
         }, 50);
@@ -36,7 +37,7 @@ const ProductBuy = (props) => {
         modalRoot.style.width = "0";
         modalRoot.style.height = "0";
         modalRoot.style.position = "inherit";
-        modalRoot.style.top = "";
+        modalRoot.style.bottom = "";
         setTimeout(() => {
           window.scrollTo({
             top: 0,
