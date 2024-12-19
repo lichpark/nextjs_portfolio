@@ -29,7 +29,7 @@ const Page = () => {
     },
     {
       keyText: "연락처",
-      valText: ["010-3136-2085", "lichpark0@hanmail.net"],
+      valText: ["010-XXXX-XXXX", "XXXXXXXXX@hanmail.net"],
       keyClassNm:
         "text-3xl font-bold pb-4 border-b-2 flex items-center justify-center w-fit",
       valClassNm: "text-2xl flex items-center justify-center pt-5 w-fit",
