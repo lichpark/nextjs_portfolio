@@ -79,7 +79,7 @@ const SlideSub = (props) => {
   return (
     <section
       ref={textRef}
-      // style={{ backgroundImage: `url(${props.imgurl})` }}
+      style={{ backgroundImage: `url(${props.imgurl})` }}
       className={props.classNm}
     >
       <div className="slide_text_wrap">
@@ -92,14 +92,13 @@ const SlideSub = (props) => {
           </div>
         </div>
       </div>
-      <Image
-        width={4000}
-        height={4000}
+      {/* <Image
+        width={100}
+        height={100}
         src={`${props.imgurl}`}
         quality={100}
-        objectFit="cover"
         alt=""
-      />
+      /> */}
     </section>
   );
 };
