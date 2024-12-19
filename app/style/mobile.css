@@ -176,4 +176,13 @@
   .perchase_fin_wrp > button {
     padding: 5%;
   }
+  .contact_mobile {
+    display: block;
+  }
+  .contact_mobile > div {
+    margin-bottom: 10px;
+  }
+  .mobile_contact_title {
+    font-size: 2rem;
+  }
 }

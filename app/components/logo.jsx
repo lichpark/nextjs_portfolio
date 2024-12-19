@@ -8,7 +8,7 @@ const Logo = () => {
         <Image
           width={100}
           height={100}
-          src="/imgs/funforge_logo.png"
+          src="/imgs/funforge_logo.webp"
           alt="logo"
           title=" "
           quality={100}

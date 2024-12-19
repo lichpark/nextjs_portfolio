@@ -34,16 +34,20 @@ const Aside_menu_ul = () => {
     },
     {
       classNm: "cate_menu",
-      links: [{ linkUrl: "/portfolio", text: "ABOUT US", key: "6" }],
+      links: [{ linkUrl: "/contact", text: "CONTACT", key: "6" }],
     },
+    // {
+    //   classNm: "cate_menu",
+    //   links: [{ linkUrl: "/portfolio", text: "ABOUT US", key: "6" }],
+    // },
     {
       classNm: "cate_menu mt20 small_menu",
       links: [{ linkUrl: "/portfolio", text: "> STORE LIST", key: "7" }],
     },
-    {
-      classNm: "cate_menu small_menu",
-      links: [{ linkUrl: "/portfolio", text: "> CONTACTUS", key: "8" }],
-    },
+    // {
+    //   classNm: "cate_menu small_menu",
+    //   links: [{ linkUrl: "/portfolio", text: "> CONTACTUS", key: "8" }],
+    // },
   ];
 
   return (
