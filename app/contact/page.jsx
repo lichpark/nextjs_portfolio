@@ -64,7 +64,6 @@ const Page = () => {
           src={"/imgs/lighthouse.webp"}
           alt={"chrome lighthouse 검사결과"}
           quality={100}
-          priority={true}
           style={{ width: "100%", height: "100%" }}
         />
       </div>

@@ -12,7 +12,6 @@ const WarhammerBox = (props) => {
             src={`${props.imgurl}`}
             alt={props.texts}
             quality={100}
-            priority={true}
           />
         </Link>
       </div>

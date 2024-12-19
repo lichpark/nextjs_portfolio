@@ -67,9 +67,19 @@ const SlideSub = (props) => {
     }
   }, [textRef, tl]);
 
+  // const lazyloadclass = () => {
+  //   //Background Image Lazyload
+  //   const bg_lazys = document.querySelectorAll(`.${props.classNm}`);
+  //   console.log(bg_lazys);
+  //   for (var idx = 0; idx < bg_lazys.length; idx++) {
+  //     bg_lazys[idx].classList.remove("bg-lazy");
+  //   }
+  // };
+
   useEffect(() => {
     handleScroll();
     window.addEventListener("scroll", handleScroll);
+    // window.addEventListener("load", lazyloadclass);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
