@@ -3,6 +3,10 @@
   position: relative;
 }
 
+.section_bg.bg-lazy {
+  background-image: none;
+}
+
 .swiper_container {
   width: 100%;
   height: 100%;

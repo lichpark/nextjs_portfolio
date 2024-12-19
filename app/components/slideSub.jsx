@@ -4,7 +4,6 @@ import { useCallback, useEffect, useRef } from "react";
 import Texts from "./texts";
 import gsap from "gsap";
 import MainButton from "./mainButton";
-import Image from "next/image";
 
 const SlideSub = (props) => {
   const tl = useRef(null);
@@ -68,9 +67,19 @@ const SlideSub = (props) => {
     }
   }, [textRef, tl]);
 
+  const lazyclass = () => {
+    //Background Image Lazyload
+    var bg_lazys = document.querySelectorAll(`.${props.classNm}`);
+
+    for (var idx = 0; idx < bg_lazys.length; idx++) {
+      bg_lazys[idx].classList.remove("bg-lazy");
+    }
+  };
+
   useEffect(() => {
     handleScroll();
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("load", lazyclass);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
