@@ -8,6 +8,7 @@ export const metadata = {
 };
 
 const Page = () => {
+  console.log("aa");
   const KeyValTextList = [
     {
       keyText: "이름",
