@@ -67,7 +67,7 @@ const SlideSub = (props) => {
     }
   }, [textRef, tl]);
 
-  const lazyclass = () => {
+  const lazyloadclass = () => {
     //Background Image Lazyload
     var bg_lazys = document.querySelectorAll(`.${props.classNm}`);
 
@@ -79,7 +79,7 @@ const SlideSub = (props) => {
   useEffect(() => {
     handleScroll();
     window.addEventListener("scroll", handleScroll);
-    window.addEventListener("load", lazyclass);
+    window.addEventListener("load", lazyloadclass);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
