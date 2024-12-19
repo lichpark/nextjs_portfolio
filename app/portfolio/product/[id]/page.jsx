@@ -5,6 +5,10 @@ import Texts from "@/app/components/texts";
 import { productData } from "@/app/data/productData";
 import { numbertocomma } from "@/app/function/function";
 
+export const metadata = {
+  title: "product page",
+  description: "products page",
+};
 const page = async ({ params }) => {
   const { id } = await params;
   const bonusratio = 0.1;

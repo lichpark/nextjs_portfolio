@@ -4,6 +4,11 @@ import { productData } from "@/app/data/productData";
 import ListTop from "@/app/components/listTop";
 import ListMain from "@/app/components/listMain";
 
+export const metadata = {
+  title: "list page",
+  description: "list page",
+};
+
 const page = async ({ params }) => {
   const { id } = await params;
   const { type } = await params;

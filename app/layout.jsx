@@ -5,10 +5,14 @@ import "./style/reset.css";
 import "./style/style.css";
 import Aside from "./components/aside";
 import Footer from "./components/footer";
+import Head from "next/head";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <title>portfolio pages</title>
+      </Head>
       <body>
         <Aside />
         <Theme>{children}</Theme>

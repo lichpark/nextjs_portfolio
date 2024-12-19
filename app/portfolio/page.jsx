@@ -2,6 +2,11 @@ import ItemSection from "../components/itemSection";
 import MainSlide from "../components/mainSlide";
 import WarhammerSection from "../components/warhammerSection";
 
+export const metadata = {
+  title: "portfolio page",
+  description: "portfolio main page",
+};
+
 const page = () => {
   const itemarr = [
     {
