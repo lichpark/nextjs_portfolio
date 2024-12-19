@@ -39,7 +39,13 @@ const ListMain = (props) => {
               props.type == "list" ? "typeButton list_active" : "typeButton"
             }
           >
-            <Image width={200} height={200} src="/imgs/ico_thumb.png" alt="" />
+            <Image
+              width={100}
+              height={100}
+              src="/imgs/ico_thumb.png"
+              alt=""
+              quality={100}
+            />
           </Link>
           <Link
             href={`/portfolio/list/${props.id}/gallery`}
@@ -48,10 +54,11 @@ const ListMain = (props) => {
             }
           >
             <Image
-              width={200}
-              height={200}
+              width={100}
+              height={100}
               src="/imgs/ico_gallery.png"
               alt=""
+              quality={100}
             />
           </Link>
         </div>
@@ -71,11 +78,12 @@ const ListMain = (props) => {
                 }
               >
                 <Image
-                  width={200}
-                  height={200}
+                  width={150}
+                  height={150}
                   src={`${v.imgurl}`}
                   alt=""
                   className="list_main_list__figure__img"
+                  quality={100}
                 />
               </figure>
               <h4 className={props.type == "gallery" ? "disnone" : ""}>

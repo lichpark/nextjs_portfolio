@@ -6,11 +6,12 @@ const Logo = () => {
     <li className="logo">
       <Link href="/portfolio">
         <Image
-          width={200}
-          height={200}
+          width={100}
+          height={100}
           src="/imgs/funforge_logo.png"
           alt="logo"
           title=" "
+          quality={100}
         />
       </Link>
     </li>

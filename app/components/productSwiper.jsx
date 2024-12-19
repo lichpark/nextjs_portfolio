@@ -29,12 +29,13 @@ const ProductSwiper = (props) => {
         {props.imgs.map((v, idx) => (
           <SwiperSlide key={idx}>
             <Image
-              width={200}
-              height={200}
+              width={100}
+              height={100}
               className="product_img"
               src={`${v}`}
               alt=""
               title=""
+              quality={100}
             />
           </SwiperSlide>
         ))}

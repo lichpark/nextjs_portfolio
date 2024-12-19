@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef } from "react";
 import Texts from "./texts";
 import gsap from "gsap";
 import MainButton from "./mainButton";
+import Image from "next/image";
 
 const SlideSub = (props) => {
   const tl = useRef(null);
@@ -78,7 +79,7 @@ const SlideSub = (props) => {
   return (
     <section
       ref={textRef}
-      style={{ backgroundImage: `url(${props.imgurl})` }}
+      // style={{ backgroundImage: `url(${props.imgurl})` }}
       className={props.classNm}
     >
       <div className="slide_text_wrap">
@@ -91,6 +92,14 @@ const SlideSub = (props) => {
           </div>
         </div>
       </div>
+      <Image
+        width={4000}
+        height={4000}
+        src={`${props.imgurl}`}
+        quality={100}
+        objectFit="cover"
+        alt=""
+      />
     </section>
   );
 };

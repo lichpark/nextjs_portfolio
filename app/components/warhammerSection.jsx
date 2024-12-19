@@ -83,7 +83,7 @@ const WarhammerSection = () => {
       section: [
         {
           classnm: "section2_sub toleft",
-          imgurl: "/imgs/main_b_01.jpg",
+          imgurl: "/imgs/main_b_01.webp",
           texts: "",
           linkurl: "/portfolio/list/00010001/list",
           button: {},
@@ -145,7 +145,7 @@ const WarhammerSection = () => {
         },
         {
           classnm: "section2_sub toright",
-          imgurl: "/imgs/main_b_02.jpg",
+          imgurl: "/imgs/main_b_02.webp",
           texts: "",
           linkurl: "/portfolio/list/00020001/list",
           button: {},

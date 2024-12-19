@@ -8,7 +8,7 @@ import "swiper/css";
 const MainSlide = () => {
   const mainSlideArr = [
     {
-      imgurl: "/imgs/main_slide/main_01.jpg",
+      imgurl: "/imgs/main_slide/main_01.webp",
       classNm: "section_bg",
       texts: [
         {
@@ -37,7 +37,7 @@ const MainSlide = () => {
       },
     },
     {
-      imgurl: "/imgs/main_slide/ronnin_img.jpg",
+      imgurl: "/imgs/main_slide/ronnin_img.webp",
       classNm: "section_bg",
       texts: [
         {
@@ -66,7 +66,7 @@ const MainSlide = () => {
       },
     },
     {
-      imgurl: "/imgs/main_slide/main_02.jpg",
+      imgurl: "/imgs/main_slide/main_02.webp",
       classNm: "section_bg",
       texts: [
         {

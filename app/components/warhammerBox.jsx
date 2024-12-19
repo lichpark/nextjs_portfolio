@@ -7,10 +7,12 @@ const WarhammerBox = (props) => {
       <div className={props.classnm}>
         <Link href={props.linkurl}>
           <Image
-            width={400}
-            height={400}
+            width={300}
+            height={300}
             src={`${props.imgurl}`}
             alt={props.texts}
+            quality={100}
+            priority={true}
           />
         </Link>
       </div>
