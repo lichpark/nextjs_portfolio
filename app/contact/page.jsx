@@ -40,7 +40,7 @@ const Page = () => {
 
   return (
     <section className="flex flex-col items-center justify-center py-24 px-12 bg-red-50 w-full h-full">
-      <Texts
+      {/* <Texts
         classnm={"text-5xl mb-10 bold mobile_contact_title"}
         type={""}
         text={"ABOUT ME"}
@@ -67,7 +67,7 @@ const Page = () => {
           priority={true}
           style={{ width: "100%", height: "100%" }}
         />
-      </div>
+      </div> */}
     </section>
   );
 };
