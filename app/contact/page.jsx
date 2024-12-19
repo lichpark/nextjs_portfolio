@@ -40,14 +40,14 @@ const Page = () => {
 
   return (
     <section className="flex flex-col items-center justify-center py-24 px-12 bg-red-50 w-full h-full">
-      {/* <Texts
+      <Texts
         classnm={"text-5xl mb-10 bold mobile_contact_title"}
         type={""}
         text={"ABOUT ME"}
       />
       <div className="grid grid-cols-3 gap-x-40 contact_mobile">
         {KeyValTextList.map((v, idx) => (
-          <KeyValTextDiv {...v} />
+          <KeyValTextDiv {...v} key={idx} />
         ))}
       </div>
       <div style={{ marginTop: "5%" }}>
@@ -67,7 +67,7 @@ const Page = () => {
           priority={true}
           style={{ width: "100%", height: "100%" }}
         />
-      </div> */}
+      </div>
     </section>
   );
 };

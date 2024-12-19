@@ -49,7 +49,7 @@ const Aside_menu_ul = () => {
     //   links: [{ linkUrl: "/portfolio", text: "> CONTACTUS", key: "8" }],
     // },
   ];
-  console.log("aaa");
+
   return (
     <ul id="left_menu">
       <Logo />

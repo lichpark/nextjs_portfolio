@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 
 const KeyValTextDiv = (props) => {
   const contactRef = useRef(null);
-  console.log(props);
+
   useEffect(() => {
     const element = contactRef.current;
 
