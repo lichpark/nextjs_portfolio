@@ -26,9 +26,9 @@ const ItemSection = (props) => {
       },
       {
         opacity: 1,
-        duration: 0.3,
+        duration: 0.1,
         x: 0,
-        delay: 0.3,
+        delay: 0.1,
       }
     );
   };
@@ -43,9 +43,9 @@ const ItemSection = (props) => {
       },
       {
         opacity: 1,
-        duration: 0.3,
+        duration: 0.1,
         x: 0,
-        delay: 0.3,
+        delay: 0.1,
       }
     );
   };
@@ -60,9 +60,9 @@ const ItemSection = (props) => {
       },
       {
         opacity: 1,
-        duration: 0.3,
+        duration: 0.1,
         y: 0,
-        delay: 0.3,
+        delay: 0.1,
       }
     );
   };

@@ -36,35 +36,35 @@ const MainSlide = () => {
         linkurl: "/portfolio",
       },
     },
-    {
-      imgurl: "/imgs/main_slide/ronnin_img.webp",
-      classNm: "section_bg",
-      texts: [
-        {
-          classnm: "text move play",
-          text: "Personal Project",
-          type: "small",
-          tkey: "21",
-        },
-        {
-          classnm: "text move play",
-          text: "ronindubai.com copy",
-          type: "big",
-          tkey: "22",
-        },
-        {
-          classnm: "text move play",
-          text: "클론코딩 \n\n GSAP에 예시로 나와있는 페이지중 RONNIN의 메인페이지에서 이펙트가 들어간 부분들 \n 기존 사이트 jquery 부분 대체",
-          type: "paragraph",
-          tkey: "23",
-        },
-      ],
-      button: {
-        classNm: "text move black_btn play",
-        text: "Go to Ronnin",
-        linkurl: "https://lichpark.github.io/ronnin_minor_copy/",
-      },
-    },
+    // {
+    //   imgurl: "/imgs/main_slide/ronnin_img.webp",
+    //   classNm: "section_bg",
+    //   texts: [
+    //     {
+    //       classnm: "text move play",
+    //       text: "Personal Project",
+    //       type: "small",
+    //       tkey: "21",
+    //     },
+    //     {
+    //       classnm: "text move play",
+    //       text: "ronindubai.com copy",
+    //       type: "big",
+    //       tkey: "22",
+    //     },
+    //     {
+    //       classnm: "text move play",
+    //       text: "클론코딩 \n\n GSAP에 예시로 나와있는 페이지중 RONNIN의 메인페이지에서 이펙트가 들어간 부분들 \n 기존 사이트 jquery 부분 대체",
+    //       type: "paragraph",
+    //       tkey: "23",
+    //     },
+    //   ],
+    //   button: {
+    //     classNm: "text move black_btn play",
+    //     text: "Go to Ronnin",
+    //     linkurl: "https://lichpark.github.io/ronnin_minor_copy/",
+    //   },
+    // },
     {
       imgurl: "/imgs/main_slide/main_02.webp",
       classNm: "section_bg",
@@ -94,35 +94,35 @@ const MainSlide = () => {
         linkurl: "/portfolio",
       },
     },
-    // {
-    //   imgurl: "/imgs/main_slide/main_03.jpg",
-    //   classNm: "section_bg",
-    //   texts: [
-    //     {
-    //       classnm: "text move play",
-    //       text: "Personal Project",
-    //       type: "small",
-    //       tkey: "31",
-    //     },
-    //     {
-    //       classnm: "text move play",
-    //       text: "Pre - Order",
-    //       type: "big",
-    //       tkey: "32",
-    //     },
-    //     {
-    //       classnm: "text move play",
-    //       text: "PRE-ORDER DATE\n 2024-11-16\nAm 10:00",
-    //       type: "paragraph",
-    //       tkey: "33",
-    //     },
-    //   ],
-    //   button: {
-    //     classNm: "text move white_btn play",
-    //     text: "Product info",
-    //     linkurl: "/portfolio",
-    //   },
-    // },
+    {
+      imgurl: "/imgs/main_slide/main_03.webp",
+      classNm: "section_bg",
+      texts: [
+        {
+          classnm: "text move play",
+          text: "Personal Project",
+          type: "small",
+          tkey: "31",
+        },
+        {
+          classnm: "text move play",
+          text: "Pre - Order",
+          type: "big",
+          tkey: "32",
+        },
+        {
+          classnm: "text move play",
+          text: "PRE-ORDER DATE\n 2024-11-16\nAm 10:00",
+          type: "paragraph",
+          tkey: "33",
+        },
+      ],
+      button: {
+        classNm: "text move white_btn play",
+        text: "Product info",
+        linkurl: "/portfolio",
+      },
+    },
   ];
 
   const swiperRefLocal = useRef();

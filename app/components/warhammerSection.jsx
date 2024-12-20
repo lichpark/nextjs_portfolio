@@ -18,9 +18,9 @@ const WarhammerSection = () => {
       },
       {
         opacity: 1,
-        duration: 0.3,
+        duration: 0.1,
         x: 0,
-        delay: 0.3,
+        delay: 0.1,
       }
     );
   };
@@ -35,9 +35,9 @@ const WarhammerSection = () => {
       },
       {
         opacity: 1,
-        duration: 0.3,
+        duration: 0,
         x: 0,
-        delay: 0.3,
+        delay: 0,
       }
     );
   };
